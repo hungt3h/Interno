@@ -1,0 +1,30 @@
+/* import font */
+@font-face {
+    font-family: DM Serif Display italic;
+    src: url('../font/DMSerifDisplay-Italic.woff2');
+}
+@font-face {
+    font-family: DM Serif Display;
+    src: url('../font/DMSerifDisplay-Regular.woff2');
+}
+
+/* style Guide Color */
+
+/* style Guide Heading */
+h1 {
+    font-size: 50px;
+    font-weight: 400;
+    font-family: DM Serif Display;
+}
+
+/* style Guide Paragraph */
+
+/* style Guide Text */
+
+/* style Guide List */
+
+/* style Guide Block */
+
+/* style Guide Button */
+
+/* style Guide Form */
