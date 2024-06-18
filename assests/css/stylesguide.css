@@ -80,6 +80,7 @@ a {
 }
 .btn-color {
     background: #CDA274;
+    border: none;
 }
 
 .fa-solid {
@@ -88,14 +89,25 @@ a {
 
 /* style Guide Form */
 
+/* style banner */
+.img-banner {
+    position: relative;
+}
+.text-banner-pages {
+    padding: 42px 0;
+    width: 500px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    position: absolute;
+    top: 36%;
+    left: 36%;
+}
+
 /* style Home */
 .content-footer {
     margin-bottom: 134px;
 }
-.img-banner {
-    position: relative;
-}
-.text-banner {
+.text-banner-home {
     position: absolute;
     top: 40%;
 }
