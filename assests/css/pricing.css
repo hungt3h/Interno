@@ -49,6 +49,13 @@
     background-color: #c58a60;
 } */
 
+
+.banner-page {
+    background-image: url('../img/banner_pricing.png');
+    height: 356px;
+    padding: 181px 0px 0px 0px;
+}
+
 .btn-custom {
     background-color: #F4F0EC;
 }

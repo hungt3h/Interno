@@ -1,0 +1,12 @@
+.banner-page {
+    background-image: url('../img/Banner_about.png');
+    height: 356px;
+    padding: 181px 0px 0px 0px;
+}
+
+.block-quotes {
+    background-image: url('../img/Pattern.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: auto;
+}

@@ -16,38 +16,63 @@
         <div class="container">
             <div class="row">
                 <nav class="navbar navbar-expand-sm navbar-white">  
-                    <div class="col-4">
+                    <div class="col-2">
                         <a class="navbar-brand" href="index.html"><img src="./assests/img/Logo.png" alt="Logo"></a>
                     </div>
-                    <div class="col-8 text-end">
+                    <div class="col-10 text-end">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
-                            <ul class="navbar-nav">
+                            <ul class="navbar-nav main-menu">
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark me-4" href="./index.html">Home</a>
+                                    <a class="nav-link px-5" href="./index.html">Home</a>
+                                </li>
+                                <li class="nav-item position-relative">
+                                    <a class="nav-link px-5" href="#">Pages</a>
+                                    <ul class="sub-menu position-absolute bg-white rounded-bottom-4 w-100 text-center">
+                                        <li class="nav-item border-bottom">
+                                            <a class="nav-link" href="./pages/about.html">About</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link rounded-bottom-4" href="./pages/team.html">Team</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item position-relative">
+                                    <a class="nav-link px-5" href="./pages/services.html">Services</a>
+                                    <ul class="sub-menu position-absolute bg-white rounded-bottom-4 w-100 text-center">
+                                        <li class="nav-item border-bottom">
+                                            <a class="nav-link rounded-bottom-4" href="./pages/service-single.html">Service-Single</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item position-relative">
+                                    <a class="nav-link px-5" href="./pages/project.htm">Project</a>
+                                    <ul class="sub-menu position-absolute bg-white rounded-bottom-4 w-100 text-center">
+                                        <li class="nav-item">
+                                            <a class="nav-link rounded-bottom-4" href="./pages/pricing.html">Pricing</a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link text-dark me-4" href="./pages/pricing.html">Pages</a>
+                                    <a class="nav-link px-5" href="#">Blog</a>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark me-4" href="./pages/services.html">Services</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark me-4" href="#">Project</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark me-4" href="#">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark me-4" href="#">Contact</a>
-                                </li>
+                                <li class="nav-item position-relative">
+                                    <a class="nav-link px-5" href="./pages/contact.html">Contact</a>
+                                    <ul class="sub-menu position-absolute bg-white rounded-bottom-4 w-100 text-center">
+                                        <li class="nav-item">
+                                            <a class="nav-link rounded-bottom-4" href="./pages/faq.html">FAQ's</a>
+                                        </li>
+                                    </ul>
+                                </li> 
                             </ul>
-                            <div class="">
+                            <div class="px-3" type="button">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
-                            <button class="btn border border-dark ms-4">Log in</button>
+                            <div class="">
+                                <button class="btn border-dark ms-4">Log in</button>
+                            </div>
                             <!-- <form class="d-flex">
                                 <input class="form-control me-2" type="text" placeholder="Search">
                                 <button class="btn btn-primary" type="button">Search</button>
@@ -57,19 +82,16 @@
                 </nav>
             </div>
         </div>
-    </div>
-
-    <div class="body">
         <div class="container-fluid content">
             <div class="row">
                 <div class="col-12">
-                    <img class="w-100 img-banner" src="./assests/img/banner.png" alt="">
+                    <img src="./assests/img/banner.png" alt="">
                     <div class="container">
                         <div class="row">
                             <div class="col-12 text-banner-home">
                                 <h1 class="disply-text">Let Your Home Be Unique</h1>
                                 <p>There are many variations of the passages of lorem Ipsum fromavailable,variations of the passages.</p>
-                                <button class="btn btn-dark">Get Started<i class="fa-solid fa-arrow-right ms-2"></i></button>
+                                <button class="btn btn-guide btn-dark">Get Started<i class="fa-solid fa-arrow-right ms-2"></i></button>
                             </div>
                             <div class="col-8"></div>
                         </div>
@@ -77,6 +99,9 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="body">
         <div class="container content">
             <div class="row">
                 <div class="col-4 text-center plan">
@@ -122,7 +147,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-dark">Get Started<i class="fa-solid fa-arrow-right ms-2"></i></button>
+                    <button class="btn btn-guide btn-dark">Get Started<i class="fa-solid fa-arrow-right ms-2"></i></button>
                 </div>
                 <div class="col-7 text-end">
                     <img src="./assests/img/Image_item1.png" alt="">
@@ -131,7 +156,9 @@
         </div>
         <div class="container testimonial content rounded-5">
             <div class="row">
-                <h1 class="text-center w-80">What the People Thinks <br> About Us</h1>
+                <div class="col-12 pb-5">
+                    <h1 class="text-center w-50 m-auto">What the People Thinks About Us</h1>
+                </div>
                 <div class="col-4">
                     <div class="testimonial-item bg-white rounded-5 me-4">
                         <div class="row mb-5">
@@ -140,8 +167,8 @@
                             </div>
                             <div class="col-9 d-flex align-items-center">
                                 <div class="ms-1">
-                                    <h3 class="number">Nattasha Mith</h3>
-                                    <p class="text-phone">Sydney, USA</p>
+                                    <h3>Nattasha Mith</h3>
+                                    <p class="small-paragraph">Sydney, USA</p>
                                 </div>
                             </div>
                         </div>
@@ -156,8 +183,8 @@
                             </div>
                             <div class="col-9 d-flex align-items-center">
                                 <div class="ms-1">
-                                    <h3 class="number">Raymond Galario</h3>
-                                    <p class="text-phone">Sydney, Australia</p>
+                                    <h3>Raymond Galario</h3>
+                                    <p class="small-paragraph">Sydney, Australia</p>
                                 </div>
                             </div>
                         </div>
@@ -172,8 +199,8 @@
                             </div>
                             <div class="col-9 d-flex align-items-center">
                                 <div class="ms-1">
-                                    <h3 class="number">Benny Roll</h3>
-                                    <p class="text-phone">Sydney, New York</p>
+                                    <h3>Benny Roll</h3>
+                                    <p class="small-paragraph">Sydney, New York</p>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +230,7 @@
         </div>
         <div class="container content">
             <div class="row">
-                <div class="col-8 text-center m-auto">
+                <div class="col-8 text-center m-auto pb-5">
                     <h1>Follow Our Projects</h1>
                     <p>It is a long established fact that a reader will be distracted by the of readable content of page  lookings at its layouts  points.</p>
                 </div>
@@ -297,7 +324,7 @@
         </div>
         <div class="container content">
             <div class="row">
-                <div class="col-8 text-center m-auto">
+                <div class="col-8 text-center m-auto pb-5">
                     <h1>Articles & News</h1>
                     <p>It is a long established fact that a reader will be distracted by the of readable content of a page when lookings at its layouts the points of using.</p>
                 </div>
@@ -366,13 +393,13 @@
                 <div class="col-8 text-center m-auto color-bg">
                     <h1 class="text-white">Wanna join the interno?</h1>
                     <p class="text-white">It is a long established fact  will be distracted.</p>
-                    <button class="btn btn-secondary btn-color border text-white">Contact With Us<i class="fa-solid fa-arrow-right ms-2 text-dark"></i></button>
+                    <button class="btn btn-guide btn-secondary btn-color border text-white">Contact With Us<i class="fa-solid fa-arrow-right ms-2 text-dark"></i></button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footer border-top">
         <div class="container content-footer">
             <div class="row">
                 <div class="col-5">

@@ -13,6 +13,7 @@
 
 /* style Guide Color */
 
+
 /* style Guide Heading Text */
 .disply-text, h1, h2, h3, h4, h5, h6 {
     font-family: 'DM Serif Display';
@@ -34,12 +35,14 @@ h3 {
 h4 {
     font-size: 22px;
 }
-h5 {
+h5,
+i {
     font-size: 20px;
 }
 h6 {
     font-size: 18px;
 }
+
 
 /* style Guide Paragraph */
 p {
@@ -53,6 +56,7 @@ p {
     font-size: 18px;
 }
 
+
 /* style Guide Text */
 a, p {
     font-family: "Jost", sans-serif;
@@ -62,16 +66,19 @@ a {
     text-decoration: none;
 }
 
+
 /* style Guide List */
 .nav-link {
     font-size: 22px;
     color: #4D5053;
 }
 
+
 /* style Guide Block */
 
+
 /* style Guide Button */
-.btn {
+.btn-guide {
     font-family: "Jost", sans-serif;
     font-size: 18px;
     padding: 26px 48px;
@@ -82,31 +89,57 @@ a {
     background: #CDA274;
     border: none;
 }
-
 .fa-solid {
     color: #CDA274;
 }
 
+
 /* style Guide Form */
+input,
+textarea {
+    outline: none;
+    font-size: 22px;
+}
+input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
 
 /* style banner */
-.img-banner {
-    position: relative;
-}
+
 .text-banner-pages {
     padding: 42px 0;
     width: 500px;
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    position: absolute;
-    top: 36%;
-    left: 36%;
 }
 
-/* style Home */
+
+/* style header */
+.sub-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+.main-menu a:hover {
+    color: #F4F0EC;
+    background-color: #4D5053;
+}
+.main-menu li:hover ul.sub-menu{
+    display: block;
+}
+
+
+/* style footer */
 .content-footer {
     margin-bottom: 134px;
+    margin-top: 100px;
 }
+
+
+/* style Home */
+
 .text-banner-home {
     position: absolute;
     top: 40%;
@@ -139,9 +172,7 @@ a {
     width: 52px;
     height: 52px;
 }
-.number {
-    margin: 0px;
-}
+.number,
 .text-phone {
     margin: 0px;
 }
