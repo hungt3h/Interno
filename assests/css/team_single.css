@@ -1,0 +1,31 @@
+.banner-page {
+    background-image: url('../img/banner_team_single.png');
+    background-repeat: no-repeat;
+    
+    height: 356px;
+    padding: 181px 0px 0px 0px;
+}
+
+.address,
+.address-icon,
+.address-text {
+    display: flex;
+}
+.address-icon {
+    background: #F4F0EC;
+    border-radius: 50%;
+    width: 52px;
+    justify-content: center;
+}
+.address-icon,
+.address-text {
+    height: 52px;
+    align-items: center;
+}
+
+.progress {
+    height: 7px;
+}
+.progress-bar {
+    background-color: #CDA274;
+}
