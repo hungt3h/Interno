@@ -50,9 +50,11 @@ p {
     color: #4D5053;
 }
 .medium-paragraph {
+    font-family: "Jost", sans-serif;
     font-size: 20px;
 }
 .small-paragraph {
+    font-family: "Jost", sans-serif;
     font-size: 18px;
 }
 
@@ -60,10 +62,10 @@ p {
 /* style Guide Text */
 a, p {
     font-family: "Jost", sans-serif;
-    
 }
 a {
     text-decoration: none;
+    color: black;
 }
 
 
@@ -102,6 +104,9 @@ textarea {
 }
 input::placeholder {
     color: rgb(0, 0, 0);
+}
+label {
+    color: #CDA274;
 }
 
 
