@@ -15,9 +15,12 @@
 
 
 /* style Guide Heading Text */
-.disply-text, h1, h2, h3, h4, h5, h6 {
+.disply-text-big, .disply-text, h1, h2, h3, h4, h5, h6 {
     font-family: 'DM Serif Display';
     color: #292F36;
+}
+.disply-text-big {
+    font-size: 120px;
 }
 .disply-text {
     font-size: 85px;
@@ -144,6 +147,11 @@ label {
 
 
 /* style Home */
+img {
+    width: 100%;
+    object-position: center;
+    object-fit: center;
+}
 
 .text-banner-home {
     position: absolute;
@@ -153,7 +161,8 @@ label {
     margin-bottom: 200px;
 }
 .plan {
-    padding: 26px 48px;
+    padding: 83px 48px;
+    border-radius: 30px;
 }
 .icon-phone,
 .icon-arrow,
@@ -208,4 +217,13 @@ label {
     background: #292F36;
     padding: 80px 0px;
     border-radius: 70px;
+}
+.client-logo {
+    padding: 0 54px;
+}
+.client-logo:first-of-type {
+    padding-left: 0;
+}
+.client-logo:last-of-type {
+    padding-right: 0;
 }
