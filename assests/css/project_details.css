@@ -1,0 +1,9 @@
+.banner-page {
+    background-image: url('../img/banner_project_details.png');
+    height: 356px;
+    padding: 181px 0px 0px 0px;
+}
+.details {
+    display: flex;
+    align-items: center;
+}
