@@ -63,7 +63,7 @@ p {
 
 
 /* style Guide Text */
-a, p {
+a, p, li {
     font-family: "Jost", sans-serif;
 }
 a {
@@ -77,10 +77,39 @@ a {
     font-size: 22px;
     color: #4D5053;
 }
+ul {
+    padding: 0;
+}
 
+/* style Guide color */
+.color-primary-text1 {
+    color: #CDA274;
+}
+.color-primary-text2 {
+    color: #292F36;
+}
+.color-primary-text3 {
+    color: #F4F0EC;
+}
+.color-primary-btn1 {
+    background: #CDA274;
+    border: none;
+}
+.color-primary-btn2 {
+    color: #F4F0EC;
+    background: #292F36;
+    border: none;
+}
+.color-primary-btn3 {
+    background: #F4F0EC;
+    border: none;
+}
 
 /* style Guide Block */
-
+.quotes {
+    padding: 80px 0px;
+    border-radius: 70px;
+}
 
 /* style Guide Button */
 .btn-guide {
@@ -90,8 +119,7 @@ a {
     border-radius: 18px;
     font-weight: 500;
 }
-.btn-color {
-    background: #CDA274;
+.btn {
     border: none;
 }
 .fa-solid {
@@ -114,7 +142,6 @@ label {
 
 
 /* style banner */
-
 .text-banner-pages {
     padding: 42px 0;
     width: 500px;
@@ -202,21 +229,12 @@ img {
     width: 100%;
 }
 .counter {
-    background-color: #F4F0EC;
     padding-top: 150px;
     padding-bottom: 150px;
-}
-.counter-number {
-    color: #CDA274;
 }
 .date {
     display: flex;
     align-items: end;
-}
-.color-bg {
-    background: #292F36;
-    padding: 80px 0px;
-    border-radius: 70px;
 }
 .client-logo {
     padding: 0 54px;
