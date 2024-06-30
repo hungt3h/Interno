@@ -3,32 +3,3 @@
     height: 356px;
     padding: 181px 0px 0px 0px;
 }
-.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
-    background-color: #CDA274;
-}
-.page-link {
-    font-weight: bold;
-    color: black;
-    width: 52px;
-    height: 52px;
-    border: 1px solid #CDA274;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.page-item:hover .page-link {
-    background-color: #CDA274;
-    color: white;
-}
-.page-link:hover .fa-solid {
-    color: white;
-}
-.page-item:first-child .page-link {
-    border-top-left-radius: 50%;
-    border-bottom-left-radius: 50%;
-}
-.page-item:last-child .page-link {
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-}

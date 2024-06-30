@@ -50,7 +50,7 @@ h6 {
 /* style Guide Paragraph */
 p {
     font-size: 22px;
-    color: #4D5053;
+    color: #292F36;
 }
 .medium-paragraph {
     font-family: "Jost", sans-serif;
@@ -68,14 +68,14 @@ a, p, li {
 }
 a {
     text-decoration: none;
-    color: black;
+    color: #292F36;
 }
 
 
 /* style Guide List */
 .nav-link {
     font-size: 22px;
-    color: #4D5053;
+    color: #292F36;
 }
 ul {
     padding: 0;
@@ -132,9 +132,10 @@ input,
 textarea {
     outline: none;
     font-size: 22px;
+    color: #292F36;
 }
 input::placeholder {
-    color: rgb(0, 0, 0);
+    color: #292F36;
 }
 label {
     color: #CDA274;
@@ -150,6 +151,38 @@ label {
 }
 
 
+/* style guide Pagination */
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+    background-color: #CDA274;
+}
+.page-link {
+    font-weight: bold;
+    color: #292F36;
+    width: 52px;
+    height: 52px;
+    border: 1px solid #CDA274;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-item:hover .page-link {
+    background-color: #CDA274;
+    color: white;
+}
+.page-link:hover .fa-solid {
+    color: white;
+}
+.page-item:first-child .page-link {
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+.page-item:last-child .page-link {
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+
 /* style header */
 .sub-menu {
     list-style: none;
@@ -159,7 +192,7 @@ label {
 }
 .main-menu a:hover {
     color: #F4F0EC;
-    background-color: #4D5053;
+    background-color: #292F36;
 }
 .main-menu li:hover ul.sub-menu{
     display: block;
@@ -209,7 +242,7 @@ img {
     height: 70px;
 }
 .icon-arrow-blog {
-    color: black;
+    color: #292F36;
     width: 52px;
     height: 52px;
 }
