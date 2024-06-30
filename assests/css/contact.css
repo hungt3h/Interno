@@ -1,0 +1,22 @@
+.banner-page {
+    background-image: url('../img/banner_contact.png');
+    background-repeat: no-repeat;
+    height: 356px;
+    padding: 181px 0px 0px 0px;
+}
+
+.address,
+.address-icon,
+.address-text {
+    display: flex;
+}
+.address-icon {
+    border-radius: 50%;
+    width: 52px;
+    justify-content: center;
+}
+.address-icon,
+.address-text {
+    height: 52px;
+    align-items: center;
+}

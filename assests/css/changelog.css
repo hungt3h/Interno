@@ -1,0 +1,9 @@
+.banner-page {
+    background-image: url('../img/banner_changelog.png');
+    height: 356px;
+    padding: 181px 0px 0px 0px;
+}
+.changelog {
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
