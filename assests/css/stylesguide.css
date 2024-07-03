@@ -12,6 +12,28 @@
 
 
 /* style Guide Color */
+.color-primary-text1 {
+    color: #CDA274;
+}
+.color-primary-text2 {
+    color: #292F36;
+}
+.color-primary-text3 {
+    color: #F4F0EC;
+}
+.color-primary-btn1 {
+    background: #CDA274;
+    border: none;
+}
+.color-primary-btn2 {
+    color: #F4F0EC;
+    background: #292F36;
+    border: none;
+}
+.color-primary-btn3 {
+    background: #F4F0EC;
+    border: none;
+}
 
 
 /* style Guide Heading Text */
@@ -81,29 +103,6 @@ ul {
     padding: 0;
 }
 
-/* style Guide color */
-.color-primary-text1 {
-    color: #CDA274;
-}
-.color-primary-text2 {
-    color: #292F36;
-}
-.color-primary-text3 {
-    color: #F4F0EC;
-}
-.color-primary-btn1 {
-    background: #CDA274;
-    border: none;
-}
-.color-primary-btn2 {
-    color: #F4F0EC;
-    background: #292F36;
-    border: none;
-}
-.color-primary-btn3 {
-    background: #F4F0EC;
-    border: none;
-}
 
 /* style Guide Block */
 .quotes {
@@ -140,7 +139,11 @@ input::placeholder {
 label {
     color: #CDA274;
 }
-
+.search {
+    outline: none;
+    border: none;
+    background-color: #F4F0EC;
+}
 
 /* style banner */
 .text-banner-pages {
@@ -184,6 +187,11 @@ label {
 
 
 /* style header */
+.header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+}
 .sub-menu {
     list-style: none;
     padding: 0;
@@ -207,15 +215,15 @@ label {
 
 
 /* style Home */
+.banner {
+    background-image: url('../img/banner.png');
+    height: 1042px;
+    padding: 320px 0px 0px 0px;
+}
 img {
     width: 100%;
     object-position: center;
     object-fit: center;
-}
-
-.text-banner-home {
-    position: absolute;
-    top: 40%;
 }
 .content {
     margin-bottom: 200px;
