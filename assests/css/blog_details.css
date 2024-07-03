@@ -1,0 +1,15 @@
+.banner-page {
+    background-image: url('../img/banner_blog_details.png');
+    height: 356px;
+    padding: 181px 0px 0px 0px;
+}
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+    background-color: #292F36;
+    color: white;
+}
+input::placeholder {
+    color: #CDA274;
+}
+.blogs-item {
+    border-bottom: 1px solid #CDA274;
+}
