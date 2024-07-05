@@ -221,7 +221,7 @@ label {
     padding: 320px 0px 0px 0px;
 }
 img {
-    width: 100%;
+    /* width: 100%; */
     object-position: center;
     object-fit: center;
 }
