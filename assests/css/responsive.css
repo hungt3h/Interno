@@ -1,5 +1,5 @@
 /* max-width 430px */
-@media (max-width:430px) {
+@media (max-width:767px) {
     /* style header */
     .header {
         background-color: white;
@@ -240,7 +240,7 @@
 
 
 /* max-width 1200px */
-@media (max-width:1199px) and (min-width:431px) {
+@media (max-width:1199px) and (min-width:768px) {
     /* style header */
     .header {
         background-color: white;
