@@ -1,0 +1,401 @@
+/* max-width 430px */
+@media (max-width:430px) {
+    /* style header */
+    .header {
+        background-color: white;
+        position: sticky;
+        top: 0;
+    }
+    .sub-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    .main-menu a:hover {
+        color: #F4F0EC;
+        background-color: #292F36;
+    }
+    .main-menu li:hover ul.sub-menu{
+        display: block;
+    }
+
+
+    /* style footer */
+    .content-footer {
+        margin-bottom: 28px;
+        margin-top: 48px;
+    }
+    .copyright {
+        padding: 12px;
+    }
+    .text-footer {
+        text-align: center;
+    }
+    .logo-footer {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+
+
+    /* style Guide Heading Text */
+    .disply-text-big, .disply-text, h1, h2, h3, h4, h5, h6 {
+        font-family: 'DM Serif Display';
+        color: #292F36;
+    }
+    .disply-text-big {
+        font-size: 50px;
+        margin-bottom: 18px;
+    }
+    .disply-text {
+        font-size: 35px;
+        margin-bottom: 18px;
+    }
+    h1 {  
+        font-size: 25px;
+        margin-bottom: 14px;
+    }
+    h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    h5,
+    i {
+        font-size: 12px;
+    }
+    h6 {
+        font-size: 10px;
+    }
+
+
+    /* style Guide Paragraph */
+    p {
+        font-size: 14px;
+        color: #292F36;
+    }
+    .medium-paragraph {
+        font-family: "Jost", sans-serif;
+        font-size: 12px;
+    }
+    .small-paragraph {
+        font-family: "Jost", sans-serif;
+        font-size: 10px;
+    }
+
+
+    /* style Guide Text */
+    a, p, li {
+        font-family: "Jost", sans-serif;
+    }
+    a {
+        text-decoration: none;
+        color: #292F36;
+    }
+    .text-responsive {
+        display: none;
+    }
+
+
+    .stylish_img {
+        display: none;
+    }
+
+    /* style Guide List */
+    .nav-link {
+        font-size: 10px;
+        color: #292F36;
+    }
+    ul {
+        padding: 0;
+    }
+
+
+    /* style Guide Block */
+    .quotes {
+        padding: 48px 0px;
+        border-radius: 32px;
+    }
+
+    /* style Guide Button */
+    .btn-guide {
+        font-family: "Jost", sans-serif;
+        font-size: 12px;
+        padding: 16px 28px;
+        border-radius: 10px;
+        font-weight: 500;
+    }
+    .btn {
+        border: none;
+    }
+    .fa-solid {
+        color: #CDA274;
+    }
+    .btn-responsive {
+        display: block;
+    }
+    .btn-responsive-none {
+        display: none;
+    }
+
+
+    /* style Guide Form */
+    input,
+    textarea {
+        outline: none;
+        font-size: 12px;
+        color: #292F36;
+    }
+    input::placeholder {
+        color: #292F36;
+    }
+    label {
+        color: #CDA274;
+    }
+    .search {
+        outline: none;
+        border: none;
+        background-color: #F4F0EC;
+    }
+
+    /* style banner */
+    .banner {
+        background-image: url('../img/banner.png');
+        background-repeat: round;
+        height: 320px;
+        padding: 52px 0px 0px 0px;
+        text-align: center;
+    }
+    .text-banner-pages {
+        padding: 42px 0;
+        width: 500px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+    
+    .content {
+        margin-bottom: 38px;
+    }
+
+    .visit {
+        justify-content: center;
+    }
+
+
+    /* style home */
+    .plan {
+        padding: 38px 48px;
+        border-radius: 30px;
+    }
+    .icon-phone {
+        font-size: 18px;
+        width: 52px;
+        height: 52px;
+    }
+    .icon-arrow {
+        width: 48px;
+        height: 48px;
+    }
+    .icon-arrow-blog {
+        color: #292F36;
+        width: 52px;
+        height: 52px;
+    }
+    .number,
+    .text-phone {
+        margin: 0px;
+    }
+    .testimonial {
+        background-color: #F4F0EC;
+        padding: 48px 38px;
+    }
+    .testimonial-item {
+        height: 100%;
+        padding: 54px 38px;
+    }
+    .counter {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .date {
+        display: flex;
+        align-items: end;
+    }
+    .client-logo {
+        padding: 0 54px;
+    }
+    .client-logo:first-of-type {
+        padding-left: 54px;
+    }
+    .client-logo:last-of-type {
+        padding-right: 54px;
+    }
+}
+
+
+/* max-width 1200px */
+@media (max-width:1199px) and (min-width:431px) {
+    /* style header */
+    .header {
+        background-color: white;
+        position: sticky;
+        top: 0;
+    }
+    .sub-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+    }
+    .main-menu a:hover {
+        color: #F4F0EC;
+        background-color: #292F36;
+    }
+    .main-menu li:hover ul.sub-menu{
+        display: block;
+    }
+
+
+    /* style footer */
+    .content-footer {
+        margin-bottom: 134px;
+        margin-top: 100px;
+    }
+
+
+    /* style Guide Heading Text */
+    .disply-text-big, .disply-text, h1, h2, h3, h4, h5, h6 {
+        font-family: 'DM Serif Display';
+        color: #292F36;
+    }
+    .disply-text-big {
+        font-size: 85px;
+    }
+    .disply-text {
+        font-size: 50px;
+    }
+    h1 {  
+        font-size: 35px;
+        
+    }
+    h2 {
+        font-size: 25px;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5,
+    i {
+        font-size: 18px;
+    }
+    h6 {
+        font-size: 14px;
+    }
+
+
+    /* style Guide Paragraph */
+    p {
+        font-size: 20px;
+        color: #292F36;
+    }
+    .medium-paragraph {
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+    }
+    .small-paragraph {
+        font-family: "Jost", sans-serif;
+        font-size: 14px;
+    }
+
+
+    /* style Guide Text */
+    a, p, li {
+        font-family: "Jost", sans-serif;
+    }
+    a {
+        text-decoration: none;
+        color: #292F36;
+    }
+
+
+    /* style Guide List */
+    .nav-link {
+        font-size: 14px;
+        color: #292F36;
+    }
+    ul {
+        padding: 0;
+    }
+
+
+    /* style Guide Block */
+    .quotes {
+        padding: 80px 0px;
+        border-radius: 70px;
+    }
+
+    /* style Guide Button */
+    .btn-guide {
+        font-family: "Jost", sans-serif;
+        font-size: 18px;
+        padding: 20px 38px;
+        border-radius: 12px;
+        font-weight: 500;
+    }
+    .btn {
+        border: none;
+    }
+    .fa-solid {
+        color: #CDA274;
+    }
+
+
+    /* style Guide Form */
+    input,
+    textarea {
+        outline: none;
+        font-size: 12px;
+        color: #292F36;
+    }
+    input::placeholder {
+        color: #292F36;
+    }
+    label {
+        color: #CDA274;
+    }
+    .search {
+        outline: none;
+        border: none;
+        background-color: #F4F0EC;
+    }
+
+    /* style banner */
+    .banner {
+        background-image: url('../img/banner.png');
+        background-repeat: round;
+        height: 532px;
+        padding: 124px 0px 0px 0px;
+    }
+    .text-banner-pages {
+        padding: 42px 0;
+        width: 500px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+    
+
+    /* style home */
+    .plan {
+        padding: 48px 48px;
+        border-radius: 30px;
+    }
+}
