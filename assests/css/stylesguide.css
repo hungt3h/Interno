@@ -203,6 +203,10 @@ img {
 
 
 /* style header */
+.navbar-toggler {
+    position: static;
+    top: 0;
+}
 .header {
     background-color: white;
     position: sticky;

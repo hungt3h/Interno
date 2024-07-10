@@ -2,6 +2,17 @@
 @media (max-width:767px) {
     /* style header */
     .header {
+        position: relative;
+    }
+    .main-menu {
+        text-align: center;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 85%;
+        right: 0%;
+    }
+    .header {
         background-color: white;
         position: sticky;
         top: 0;
@@ -12,13 +23,7 @@
         margin: 0;
         display: none;
     }
-    .main-menu a:hover {
-        color: #F4F0EC;
-        background-color: #292F36;
-    }
-    .main-menu li:hover ul.sub-menu{
-        display: block;
-    }
+
 
 
     /* style footer */
