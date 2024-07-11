@@ -8,76 +8,75 @@
     <link rel="stylesheet" href="../assests/css/fontawesome/css/all.css">
     <link rel="stylesheet" href="../assests/css/contact.css">
     <link rel="stylesheet" href="../assests/css/stylesguide.css">
+    <link rel="stylesheet" href="../assests/css/responsive.css">
     <title>Contact Us</title>
 </head>
 <body>
     <div class="header">
         <div class="container">
             <div class="row">
-                <nav class="navbar navbar-expand-sm navbar-white">  
-                    <div class="col-2">
+                <nav class="navbar">
+                    <div class="col-4 col-md-2">
                         <a class="navbar-brand" href="../index.html"><img src="../assests/img/Logo.png" alt="Logo"></a>
                     </div>
-                    <div class="col-10 text-end">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-end" id="mynavbar">
-                            <ul class="navbar-nav main-menu">
-                                <li class="nav-item">
-                                    <a class="nav-link px-4" href="../index.html">Home</a>
-                                </li>
-                                <li class="nav-item position-relative">
-                                    <a class="nav-link px-4" href="#">Pages</a>
-                                    <ul class="sub-menu position-absolute bg-white rounded-bottom-4 w-100 text-center">
-                                        <li class="nav-item border-bottom">
-                                            <a class="nav-link" href="./about.html">About</a>
+                    <div class="col-8 icon-bars">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="col-8 col-md-10 d-flex justify-content-end">
+                        <div class="main-menu">
+                            <ul class="d-flex m-0">
+                                <li class="sub-menu"><a href="../index.html">Home</a></li>
+                                <li class="sub-menu">
+                                    <a href="#">Pages</a>
+                                    <ul class="drop-item rounded-bottom-4">
+                                        <li>
+                                            <a href="./about.html">About</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link rounded-bottom-4" href="./team.html">Team</a>
+                                        <li>
+                                            <a class="rounded-bottom-4" href="./team.html">Team</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item position-relative">
-                                    <a class="nav-link px-4" href="./services.html">Services</a>
-                                    <ul class="sub-menu position-absolute bg-white rounded-bottom-4 w-100 text-center">
-                                        <li class="nav-item border-bottom">
-                                            <a class="nav-link rounded-bottom-4" href="./service_single.html">Service Single</a>
+                                <li class="sub-menu">
+                                    <a href="./services.html">Services</a>
+                                    <ul class="drop-item rounded-bottom-4">
+                                        <li>
+                                            <a class="rounded-bottom-4" href="./service_single.html">Service Single</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item position-relative">
-                                    <a class="nav-link px-4" href="./project.html">Project</a>
-                                    <ul class="sub-menu position-absolute bg-white rounded-bottom-4 w-100 text-center">
-                                        <li class="nav-item">
-                                            <a class="nav-link rounded-bottom-4" href="./pricing.html">Pricing</a>
+                                <li class="sub-menu">
+                                    <a href="./project.html">Project</a>
+                                    <ul class="drop-item rounded-bottom-4">
+                                        <li>
+                                            <a class="rounded-bottom-4" href="./pricing.html">Pricing</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="nav-link px-4" href="./blog.html">Blog</a>
+                                <li class="sub-menu">
+                                    <a href="./blog.html">Blog</a>
                                 </li>
-                                <li class="nav-item position-relative">
-                                    <a class="nav-link px-4" href="./contact.html">Contact</a>
-                                    <ul class="sub-menu position-absolute bg-white rounded-bottom-4 w-100 text-center">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="./faq.html">FAQ's</a>
+                                <li class="sub-menu">
+                                    <a href="./contact.html">Contact</a>
+                                    <ul class="drop-item rounded-bottom-4">
+                                        <li>
+                                            <a href="./faq.html">Faq's</a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link rounded-bottom-4" href="./changelog.html">Changelog</a>
+                                        <li>
+                                            <a class="rounded-bottom-4" href="./changelog.html">Changelog</a>
                                         </li>
                                     </ul>
-                                </li> 
+                                </li>
+                                <div class="border-search d-flex align-items-center border" id="search">
+                                    <input class="search" type="search">
+                                    <i class="fa-solid fa-magnifying-glass" onclick="showSearch()"></i>
+                                </div>
                             </ul>
-                            <div class="px-3" type="button">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </div>
                         </div>
-                    </div>   
+                    </div>
                 </nav>
             </div>
         </div>
-        
     </div>
     
 
@@ -269,5 +268,6 @@
 </body>
 
 <script src="../assests/js/bootstrap.js"></script>
+<script src="../assests/js/index.js"></script>
 
 </html>
