@@ -536,7 +536,7 @@
         display: flex;
     }
     .sub-menu {
-        padding: 8px 42px;
+        padding: 8px 32px;
     }
     .sub-menu ul li a{
         text-align: center;
@@ -573,7 +573,9 @@
         border: none;
         outline: none;
         background-color: white;
+        transition: 1.5s;
         display: none;
+        
     }
     .active-search .search{
         display: block;

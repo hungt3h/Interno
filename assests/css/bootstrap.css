@@ -4589,7 +4589,7 @@ textarea.form-control-lg {
 }
 
 .accordion-button {
-  /* position: relative; */
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
@@ -4761,7 +4761,7 @@ textarea.form-control-lg {
 }
 
 .page-link {
-  /* position: relative; */
+  position: relative;
   display: block;
   padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
   font-size: var(--bs-pagination-font-size);
@@ -5063,7 +5063,7 @@ textarea.form-control-lg {
 }
 
 .list-group-item {
-  /* position: relative; */
+  position: relative;
   display: block;
   padding: var(--bs-list-group-item-padding-y) var(--bs-list-group-item-padding-x);
   color: var(--bs-list-group-color);
