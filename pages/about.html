@@ -19,41 +19,54 @@
             <div class="row">
                 <nav class="navbar">
                     <div class="col-4 col-md-2">
-                        <a class="navbar-brand" href="../index.html"><img src="../assests/img/Logo.png" alt="Logo"></a>
+                        <a class="navbar-brand" href="index.html"><img src="../assests/img/Logo.png" alt="Logo"></a>
                     </div>
-                    <div class="col-8 icon-bars">
-                        <i class="fa-solid fa-bars"></i>
+                    <div class="col-4 icon-bars">
+                        <div class="border-search-rps d-flex align-items-center border" id="search-rps">
+                            <input class="search-rps" type="search">
+                            <i class="fa-solid fa-magnifying-glass" onclick="showSearchRps()"></i>
+                        </div>
+                        <i class="fa-solid fa-bars icon-navbars border px-2 py-1 rounded-3" onclick="showNav()"></i>
                     </div>
-                    <div class="col-8 col-md-10 d-flex justify-content-end">
+                    <div class="col-8 col-md-10 main-nav">
                         <div class="main-menu">
-                            <ul class="d-flex m-0">
+                            <ul class="item-menu m-0">
                                 <li class="sub-menu"><a href="../index.html">Home</a></li>
                                 <li class="sub-menu">
                                     <a href="#">Pages</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a href="./about.html">About</a>
+                                            <a class="fs-6" href="./about.html">About</a>
                                         </li>
                                         <li>
-                                            <a class="rounded-bottom-4" href="./team.html">Team</a>
+                                            <a class="fs-6 rounded-bottom-4" href="./team.html">Team</a>
                                         </li>
                                     </ul>
+                                    <div class="icon-caret">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
                                 </li>
                                 <li class="sub-menu">
                                     <a href="./services.html">Services</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a class="rounded-bottom-4" href="./service_single.html">Service Single</a>
+                                            <a class="fs-6 rounded-bottom-4" href="./service_single.html">Service Single</a>
                                         </li>
                                     </ul>
+                                    <div class="icon-caret">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
                                 </li>
                                 <li class="sub-menu">
                                     <a href="./project.html">Project</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a class="rounded-bottom-4" href="./pricing.html">Pricing</a>
+                                            <a class="fs-6 rounded-bottom-4" href="./pricing.html">Pricing</a>
                                         </li>
                                     </ul>
+                                    <div class="icon-caret">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
                                 </li>
                                 <li class="sub-menu">
                                     <a href="./blog.html">Blog</a>
@@ -62,14 +75,17 @@
                                     <a href="./contact.html">Contact</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a href="./faq.html">Faq's</a>
+                                            <a class="fs-6" href="./faq.html">Faq's</a>
                                         </li>
                                         <li>
-                                            <a class="rounded-bottom-4" href="./changelog.html">Changelog</a>
+                                            <a class="fs-6 rounded-bottom-4" href="./changelog.html">Changelog</a>
                                         </li>
                                     </ul>
+                                    <div class="icon-caret">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
                                 </li>
-                                <div class="border-search d-flex align-items-center border" id="search">
+                                <div class="border-search border" id="search">
                                     <input class="search" type="search">
                                     <i class="fa-solid fa-magnifying-glass" onclick="showSearch()"></i>
                                 </div>
@@ -83,8 +99,8 @@
 
     <div class="body">
         <div class="container-fluid content banner-page">
-            <div class="row">
-                <div class="col-4 d-flex justify-content-center m-auto">
+            <div class="row me-0">
+                <div class="col-6 col-sm-4 col-md-4 d-flex justify-content-center m-auto">
                     <div class="text-banner-pages bg-white text-center">
                         <h1>About Us</h1>
                         <nav aria-label="breadcrumb">
@@ -99,8 +115,8 @@
         </div>
         <div class="container content">
             <div class="row">
-                <div class="col-10 block-quotes text-center m-auto p-5">
-                    <div class="p-5">
+                <div class="col-12 col-md-10 block-quotes text-center m-auto p-5">
+                    <div class="content-block">
                         <div class="col-12">
                             <svg width="74" height="56" viewBox="0 0 74 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path 
@@ -126,7 +142,7 @@
                                 4.8C9.8849 2 13.2849 0.599999 17.5516 0.599999Z" fill="#CDA274" />
                             </svg>
                         </div>
-                        <div class="col-12 p-5">
+                        <div class="text-quotes col-12">
                             <h2>
                                 I like an interior that defies labeling. I don't really want someone to walk into a room and know that I did it
                             </h2>
@@ -138,28 +154,31 @@
         </div>
         <div class="container content">
             <div class="row">
-                <div class="col-5">
-                    <h1 class="mb-5">What We Do</h1>
-                    <p class="mb-5">
+                <div class="item-block col-12 col-md-7 text-end my-auto">
+                    <img src="../assests/img/image_item2.png" alt="">
+                </div>
+                <div class="col-12 col-md-5 mt-3">
+                    <h1>What We Do</h1>
+                    <p>
                         It is a long established fact that a reader will be distracted by the of readable content of a page
                         when lookings at its layouts the points of using
                         that it has a more-or-less normal.
                     </p>
                     <button class="btn btn-guide btn-secondary color-primary-btn2">Our Concept<i class="fa-solid fa-arrow-right ms-2"></i></button>
                 </div>
-                <div class="col-7 text-end">
+                <div class="item-none col-12 col-md-7 text-end my-auto">
                     <img src="../assests/img/image_item2.png" alt="">
                 </div>
             </div>
         </div>
         <div class="container content">
             <div class="row">
-                <div class="col-7">
+                <div class="col-12 col-md-7 my-auto">
                     <img src="../assests/img/image_item3.png" alt="">
                 </div>
-                <div class="col-5">
-                    <h1 class="mb-5">The End Result</h1>
-                    <p class="mb-5">
+                <div class="col-12 col-md-5 mt-3">
+                    <h1>The End Result</h1>
+                    <p>
                         It is a long established fact that a reader will be distracted by the of readable content of a page
                         when lookings at its layouts the points of using
                         that it has a more-or-less normal.
@@ -168,46 +187,46 @@
                 </div>
             </div>
         </div>
-        <div class="container-fuid  content testimonial">
+        <div class="container-fuid content testimonial">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-12 pb-5">
+                    <div class="col-12">
                         <h1 class="text-center w-50 m-auto">What the People Thinks About Us</h1>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3 mt-3">
                         <img src="../assests/img/team1.png" alt="">
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3 mt-3">
                         <img src="../assests/img/team2.png" alt="">
                     </div>
-                    <div class="col-3">
-                        <div class="infomation">
+                    <div class="col-6 col-md-3 mt-3 infomation">
+                        <div class="">
                             <img src="../assests/img/team3.png" alt="">
-                            <div class="infomation-text bg-white rounded-5 text-center p-5">
-                                <h3>Nattasha Julie</h3>
-                                <p class="small-paragraph">Design, Australia</p>
-                                <div class="row text-center py-5">
-                                    <div class="col-3">
-                                        <i class="fa-brands fa-facebook-f"></i>
-                                    </div>
-                                    <div class="col-3">
-                                        <i class="fa-brands fa-twitter"></i>
-                                    </div>
-                                    <div class="col-3">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </div>
-                                    <div class="col-3">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </div>
+                        </div>
+                        <div class="infomation-text bg-white rounded-5 text-center p-5">
+                            <h3>Nattasha Julie</h3>
+                            <p class="small-paragraph">Design, Australia</p>
+                            <div class="row text-center py-5">
+                                <div class="col-3">
+                                    <i class="fa-brands fa-facebook-f"></i>
                                 </div>
-                                <p class="small-paragraph">
-                                    +1 (378) 400-1234
-                                    julie@email.com
-                                </p>
+                                <div class="col-3">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </div>
+                                <div class="col-3">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </div>
                             </div>
-                        </div>    
+                            <p class="small-paragraph">
+                                +1 (378) 400-1234
+                                julie@email.com
+                            </p>
+                        </div>  
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3 mt-3">
                         <img src="../assests/img/team4.png" alt="">
                     </div>
                 </div>
@@ -215,7 +234,7 @@
         </div>
         <div class="container content">
             <div class="row mx-5">
-                <div class="col-8 m-auto pb-5">
+                <div class="col-12 col-md-8 m-auto pb-5">
                     <h1 class="text-center">Creative project? Let's have a productive talk.</h1>
                 </div>
                 <div class="row">
@@ -229,7 +248,7 @@
                             <input class="w-100 border-0" type="email" placeholder="Email">
                         </div>
                     </div>
-                    <div class="co-12 pt-5">
+                    <div class="col-12 pt-5">
                         <div class="border-bottom border-dark">
                             <textarea class="border-0 w-100" name="" id="" rows="6">Hello Iam Intrested in..</textarea>
                         </div>

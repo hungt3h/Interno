@@ -77,6 +77,7 @@ h6 {
 p {
     font-size: 22px;
     color: #292F36;
+    margin-bottom: 20px;
 }
 .medium-paragraph {
     font-family: "Jost", sans-serif;
@@ -239,6 +240,14 @@ img {
 .plan {
     padding: 83px 48px;
     border-radius: 30px;
+}
+
+.qustion {
+   padding-left: 48px; 
+}
+.parameter {
+    
+    padding-right: 24px;
 }
 
 

@@ -19,41 +19,54 @@
             <div class="row">
                 <nav class="navbar">
                     <div class="col-4 col-md-2">
-                        <a class="navbar-brand" href="../index.html"><img src="../assests/img/Logo.png" alt="Logo"></a>
+                        <a class="navbar-brand" href="index.html"><img src="../assests/img/Logo.png" alt="Logo"></a>
                     </div>
-                    <div class="col-8 icon-bars">
-                        <i class="fa-solid fa-bars"></i>
+                    <div class="col-4 icon-bars">
+                        <div class="border-search-rps d-flex align-items-center border" id="search-rps">
+                            <input class="search-rps" type="search">
+                            <i class="fa-solid fa-magnifying-glass" onclick="showSearchRps()"></i>
+                        </div>
+                        <i class="fa-solid fa-bars icon-navbars border px-2 py-1 rounded-3" onclick="showNav()"></i>
                     </div>
-                    <div class="col-8 col-md-10 d-flex justify-content-end">
+                    <div class="col-8 col-md-10 main-nav">
                         <div class="main-menu">
-                            <ul class="d-flex m-0">
+                            <ul class="item-menu m-0">
                                 <li class="sub-menu"><a href="../index.html">Home</a></li>
                                 <li class="sub-menu">
                                     <a href="#">Pages</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a href="./about.html">About</a>
+                                            <a class="fs-6" href="./about.html">About</a>
                                         </li>
                                         <li>
-                                            <a class="rounded-bottom-4" href="./team.html">Team</a>
+                                            <a class="fs-6 rounded-bottom-4" href="./team.html">Team</a>
                                         </li>
                                     </ul>
+                                    <div class="icon-caret">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
                                 </li>
                                 <li class="sub-menu">
                                     <a href="./services.html">Services</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a class="rounded-bottom-4" href="./service_single.html">Service Single</a>
+                                            <a class="fs-6 rounded-bottom-4" href="./service_single.html">Service Single</a>
                                         </li>
                                     </ul>
+                                    <div class="icon-caret">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
                                 </li>
                                 <li class="sub-menu">
                                     <a href="./project.html">Project</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a class="rounded-bottom-4" href="./pricing.html">Pricing</a>
+                                            <a class="fs-6 rounded-bottom-4" href="./pricing.html">Pricing</a>
                                         </li>
                                     </ul>
+                                    <div class="icon-caret">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
                                 </li>
                                 <li class="sub-menu">
                                     <a href="./blog.html">Blog</a>
@@ -62,14 +75,17 @@
                                     <a href="./contact.html">Contact</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a href="./faq.html">Faq's</a>
+                                            <a class="fs-6" href="./faq.html">Faq's</a>
                                         </li>
                                         <li>
-                                            <a class="rounded-bottom-4" href="./changelog.html">Changelog</a>
+                                            <a class="fs-6 rounded-bottom-4" href="./changelog.html">Changelog</a>
                                         </li>
                                     </ul>
+                                    <div class="icon-caret">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
                                 </li>
-                                <div class="border-search d-flex align-items-center border" id="search">
+                                <div class="border-search border" id="search">
                                     <input class="search" type="search">
                                     <i class="fa-solid fa-magnifying-glass" onclick="showSearch()"></i>
                                 </div>
@@ -83,8 +99,8 @@
 
     <div class="body">
         <div class="container-fluid content banner-page">
-            <div class="row">
-                <div class="col-4 d-flex justify-content-center m-auto">
+            <div class="row me-0">
+                <div class="col-6 col-sm-4 col-md-4 d-flex justify-content-center m-auto">
                     <div class="text-banner-pages bg-white text-center">
                         <h1>Professional Single</h1>
                         <nav aria-label="breadcrumb">
@@ -110,6 +126,50 @@
                         Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.
                         Contrpobelie frandomised words which don't look even slightly believable.
                     </p>
+                    <div class="row item-none">
+                        <div class="col-sm-10 col-md-7 address">
+                            <div class="col-4">
+                                <div class="address-icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="address-icon my-4">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="address-icon">
+                                    <i class="fa-solid fa-earth-americas"></i>
+                                </div>
+                            </div>
+                            <div class="col-8">
+                                <p class="address-text medium-paragraph">
+                                    info@yourdomain.com
+                                </p>
+                                <p class="address-text medium-paragraph my-4">
+                                    +1 (378) 400-1234
+                                </p>
+                                <p class="address-text medium-paragraph">
+                                    www.yourdomain.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-none">
+                        <div class="row mt-5">
+                            <div class="col-1">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                            <div class="col-1">
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                            <div class="col-1">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="col-1">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-block">
                     <div class="row">
                         <div class="col-6 address">
                             <div class="col-4">
@@ -136,7 +196,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-5">
+                    <div class="row">
                         <div class="col-1">
                             <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                         </div>
@@ -157,7 +217,7 @@
             <div class="row mb-5">
                 <div class="col-12">
                     <h1>Short Biography</h1>
-                    <p class="my-5">
+                    <p>
                         Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere 
                         in.Contrary to popular belief. There are many variations of passages of Lorem Ipsum available, 
                         but the majority have suffered alteration in some form, njecthumour
@@ -172,14 +232,14 @@
             </div>
             <div class="row">
                 <div class="col-6">
-                    <div class="pe-4">
+                    <div class="parameter">
                         <h3 class="mb-4">Simplicity and Functionality</h3>
                         <p>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in belief.</p>
                         <p>There are many variations of passages of Lorem Ipsum from available, but the majority have suffered alteration in some form, njecthumour</p>
                         <div class="mt-5">
                             <div class="row">
                                 <p class="col-7 fw-bold">Project Design</p>
-                                <p class="col-4 ms-3">65%</p>
+                                <p class="col-4">65%</p>
                             </div>
                             <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
                                 <div class="progress-bar" style="width: 65%"></div>
@@ -206,7 +266,7 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div class="ps-5">
+                    <div class="qustion">
                         <h3 class="mb-4">Qustion And Answer</h3>
                         <p>Lorem ipsum dolor sit amet, adipiscing Aliquam eu sem vitae turpmaximus.posuere in.</p>
                         <div class="accordion mt-5" id="accordionExample">
@@ -254,20 +314,23 @@
                 </div>
             </div>
         </div>
-        <div class="container-fuid  content testimonial">
+        <div class="container-fuid content testimonial">
             <div class="container py-5">
                 <div class="row">
-                    <div class="col-12 pb-5">
+                    <div class="col-12">
                         <h1 class="text-center w-50 m-auto">What the People Thinks About Us</h1>
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3 mt-3">
                         <img src="../assests/img/team1.png" alt="">
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3 mt-3">
                         <img src="../assests/img/team2.png" alt="">
                     </div>
-                    <div class="col-3">
-                        <div class="bg-white rounded-5 text-center h-100 p-5">
+                    <div class="col-6 col-md-3 mt-3 infomation">
+                        <div class="">
+                            <img src="../assests/img/team3.png" alt="">
+                        </div>
+                        <div class="infomation-text bg-white rounded-5 text-center p-5">
                             <h3>Nattasha Julie</h3>
                             <p class="small-paragraph">Design, Australia</p>
                             <div class="row text-center py-5">
@@ -288,9 +351,9 @@
                                 +1 (378) 400-1234
                                 julie@email.com
                             </p>
-                        </div>
+                        </div>  
                     </div>
-                    <div class="col-3">
+                    <div class="col-6 col-md-3 mt-3">
                         <img src="../assests/img/team4.png" alt="">
                     </div>
                 </div>
@@ -312,7 +375,7 @@
                             <input class="border-0" type="email" placeholder="Email">
                         </div>
                     </div>
-                    <div class="co-12 pt-5">
+                    <div class="col-12 pt-5">
                         <div class="border-bottom border-dark">
                             <textarea class="border-0 w-100" name="" id="" rows="6">Sent Your Message</textarea>
                         </div>
