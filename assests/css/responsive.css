@@ -1,6 +1,9 @@
 /* max-width 430px */
 @media (max-width:767px) {
     /* style header */
+    .navbar {
+        padding: 12px 12px;
+    }
     .icon-bars {
         display: inline-flex;
         justify-content: end;
@@ -205,12 +208,6 @@
     .fa-solid {
         color: #CDA274;
     }
-    .btn-responsive {
-        display: block;
-    }
-    .btn-responsive-none {
-        display: none;
-    }
 
 
     /* style Guide Form */
@@ -254,7 +251,8 @@
     }
     .testimonial {
         background-color: #F4F0EC;
-        padding: 0px 38px;
+        margin: 24px 0;
+        padding: 18px 28px;
     }
     .testimonial-item {
         height: 100%;

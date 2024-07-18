@@ -14,9 +14,12 @@ const menuItems = document.querySelectorAll('li');
 
 menuItems.forEach(item => {
   const submenu = item.querySelector('.drop-item');
+  
   item.addEventListener('click', () => {
+
     submenu.classList.toggle('active-search');
   });
+  
 });
 
 
