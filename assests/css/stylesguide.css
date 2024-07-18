@@ -251,8 +251,8 @@ img {
 }
 
 
-style icon
-/* .icon-phone, */
+/* style icon */
+.icon-phone,
 .icon-arrow,
 .icon-arrow-blog {
     display: flex;
