@@ -62,6 +62,7 @@
     }
     .active-search .search-rps{
         display: block;
+        transition: 2s;
     }
     .border-search-rps {
         border-radius: 26px;
