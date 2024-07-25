@@ -10,6 +10,8 @@ function showNav() {
   document.querySelector('.main-menu').classList.toggle('active-search');
 }
 
+
+// show Item menu
 const menuItems = document.querySelectorAll('li');
 
 menuItems.forEach(item => {

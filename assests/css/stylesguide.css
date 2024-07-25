@@ -13,6 +13,7 @@
     z-index: 2;
 }
 
+
 /* style Guide Color */
 .color-primary-text1 {
     color: #CDA274;
@@ -78,7 +79,7 @@ h6 {
 p {
     font-size: 22px;
     color: #292F36;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 .medium-paragraph {
     font-family: "Jost", sans-serif;
@@ -219,6 +220,10 @@ img {
 }
 
 
+/* style margin padding */
+
+
+
 /* style footer */
 .content-footer {
     margin-bottom: 134px;
@@ -230,12 +235,11 @@ img {
 
 
 /* style Home */
-
-
 .content {
     margin-bottom: 200px;
 }
 .plan {
+    margin-bottom: 18px;
     padding: 83px 48px;
     border-radius: 30px;
 }
@@ -293,7 +297,8 @@ img {
 }
 .date {
     display: flex;
-    align-items: end;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 
