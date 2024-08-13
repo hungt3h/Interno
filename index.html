@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assests/css/bootstrap.css">
+    <link rel="stylesheet" href="./assests/slick/slick.css">
     <link rel="stylesheet" href="./assests/css/fontawesome/css/all.css">
     <link rel="stylesheet" href="./assests/css/stylesguide.css">    
     <link rel="stylesheet" href="./assests/css/responsive.css">
@@ -35,10 +36,10 @@
                                     <a href="#">Pages</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a class="" href="./pages/about.html">About</a>
+                                            <a class="fs-6" href="./pages/about.html">About</a>
                                         </li>
                                         <li>
-                                            <a class="rounded-bottom-4" href="./pages/team.html">Team</a>
+                                            <a class="fs-6 rounded-bottom-4" href="./pages/team.html">Team</a>
                                         </li>
                                     </ul>
                                     <div class="icon-caret">
@@ -49,7 +50,7 @@
                                     <a href="./pages/services.html">Services</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a class=" rounded-bottom-4" href="./pages/service_single.html">Service Single</a>
+                                            <a class="fs-6 rounded-bottom-4" href="./pages/service_single.html">Service Single</a>
                                         </li>
                                     </ul>
                                     <div class="icon-caret">
@@ -60,7 +61,7 @@
                                     <a href="./pages/project.html">Project</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a class=" rounded-bottom-4" href="./pages/pricing.html">Pricing</a>
+                                            <a class="fs-6 rounded-bottom-4" href="./pages/pricing.html">Pricing</a>
                                         </li>
                                     </ul>
                                     <div class="icon-caret">
@@ -74,10 +75,10 @@
                                     <a href="./pages/contact.html">Contact</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a class="" href="./pages/faq.html">Faq's</a>
+                                            <a class="fs-6" href="./pages/faq.html">Faq's</a>
                                         </li>
                                         <li>
-                                            <a class=" rounded-bottom-4" href="./pages/changelog.html">Changelog</a>
+                                            <a class="fs-6 rounded-bottom-4" href="./pages/changelog.html">Changelog</a>
                                         </li>
                                     </ul>
                                     <div class="icon-caret">
@@ -85,7 +86,7 @@
                                     </div>
                                 </li>
                                 <div class="border-search border" id="search">
-                                    <input class="search" type="search">
+                                    <input class="search" type="search" placeholder="Search">
                                     <i class="fa-solid fa-magnifying-glass" onclick="showSearch()"></i>
                                 </div>
                             </ul>
@@ -175,52 +176,102 @@
                     <div class="col-12 pb-4">
                         <h1 class="text-center w-50 m-auto">What the People Thinks About Us</h1>
                     </div>
-                    <div class="col-12 col-md-4 mb-3">
-                        <div class="testimonial-item bg-white rounded-5">
-                            <div class="row aboutUs">
-                                <div class="col-4 col-md-8 col-lg-4">
-                                    <img src="./assests/img/people1.png" alt="">
-                                </div>
-                                <div class="col-8 col-md-12 col-lg-8 d-flex align-items-center">
-                                    <div class="ms-1">
-                                        <h3>Nattasha Mith</h3>
-                                        <p class="small-paragraph">Sydney, USA</p>
+                    <div class="slick-feedback">
+                        <div class="item">
+                            <div class="testimonial-item bg-white rounded-5">
+                                <div class="row aboutUs">
+                                    <div class="col-4 col-md-8 col-lg-4">
+                                        <img src="./assests/img/people1.png" alt="">
+                                    </div>
+                                    <div class="col-8 col-md-12 col-lg-8 d-flex align-items-center">
+                                        <div class="ms-1">
+                                            <h3>Nattasha Mith</h3>
+                                            <p class="small-paragraph">Sydney, USA</p>
+                                        </div>
                                     </div>
                                 </div>
+                                <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-3">
-                        <div class="testimonial-item bg-white rounded-5">
-                            <div class="row aboutUs">
-                                <div class="col-4 col-md-8 col-lg-4">
-                                    <img src="./assests/img/people2.png" alt="">
-                                </div>
-                                <div class="col-4 col-md-12 col-lg-4 d-flex align-items-center">
-                                    <div class="ms-1">
-                                        <h3>Raymond Galario</h3>
-                                        <p class="small-paragraph">Sydney, Australia</p>
+                        <div class="item">
+                            <div class="testimonial-item bg-white rounded-5">
+                                <div class="row aboutUs">
+                                    <div class="col-4 col-md-8 col-lg-4">
+                                        <img src="./assests/img/people2.png" alt="">
+                                    </div>
+                                    <div class="col-4 col-md-12 col-lg-4 d-flex align-items-center">
+                                        <div class="ms-1">
+                                            <h3>Raymond Galario</h3>
+                                            <p class="small-paragraph">Sydney, Australia</p>
+                                        </div>
                                     </div>
                                 </div>
+                                <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled it to make a type book.</p>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled it to make a type book.</p>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-4 mb-3">
-                        <div class="testimonial-item bg-white rounded-5">
-                            <div class="row aboutUs">
-                                <div class="col-4 col-md-8 col-lg-4">
-                                    <img src="./assests/img/people3.png" alt="">
-                                </div>
-                                <div class="col-4 col-md-12 col-lg-4 d-flex align-items-center">
-                                    <div class="ms-1">
-                                        <h3>Benny Roll</h3>
-                                        <p class="small-paragraph">Sydney, New York</p>
+                        <div class="item">
+                            <div class="testimonial-item bg-white rounded-5">
+                                <div class="row aboutUs">
+                                    <div class="col-4 col-md-8 col-lg-4">
+                                        <img src="./assests/img/people3.png" alt="">
+                                    </div>
+                                    <div class="col-4 col-md-12 col-lg-4 d-flex align-items-center">
+                                        <div class="ms-1">
+                                            <h3>Benny Roll</h3>
+                                            <p class="small-paragraph">Sydney, New York</p>
+                                        </div>
                                     </div>
                                 </div>
+                                <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled.</p>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled.</p>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-item bg-white rounded-5">
+                                <div class="row aboutUs">
+                                    <div class="col-4 col-md-8 col-lg-4">
+                                        <img src="./assests/img/people1.png" alt="">
+                                    </div>
+                                    <div class="col-8 col-md-12 col-lg-8 d-flex align-items-center">
+                                        <div class="ms-1">
+                                            <h3>Nattasha Mith</h3>
+                                            <p class="small-paragraph">Sydney, USA</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-item bg-white rounded-5">
+                                <div class="row aboutUs">
+                                    <div class="col-4 col-md-8 col-lg-4">
+                                        <img src="./assests/img/people2.png" alt="">
+                                    </div>
+                                    <div class="col-4 col-md-12 col-lg-4 d-flex align-items-center">
+                                        <div class="ms-1">
+                                            <h3>Raymond Galario</h3>
+                                            <p class="small-paragraph">Sydney, Australia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled it to make a type book.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonial-item bg-white rounded-5">
+                                <div class="row aboutUs">
+                                    <div class="col-4 col-md-8 col-lg-4">
+                                        <img src="./assests/img/people3.png" alt="">
+                                    </div>
+                                    <div class="col-4 col-md-12 col-lg-4 d-flex align-items-center">
+                                        <div class="ms-1">
+                                            <h3>Benny Roll</h3>
+                                            <p class="small-paragraph">Sydney, New York</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Lorem Ipsum is simply dummy text of the typesetting industry. Ipsum has been scrambled.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -503,6 +554,8 @@
     </div>
 </body>
 
+<script src="./assests/js/jquery-3.7.1.min.js"></script>
+<script src="./assests/slick/slick.js"></script>
 <script src="./assests/js/bootstrap.js"></script>
 <script src="./assests/js/index.js"></script>
 

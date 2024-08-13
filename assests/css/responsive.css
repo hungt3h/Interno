@@ -252,7 +252,7 @@
     .testimonial {
         background-color: #F4F0EC;
         margin: 24px 0;
-        padding: 18px 28px;
+        padding: 18px 0;
     }
     .testimonial-item {
         height: 100%;
@@ -346,6 +346,15 @@
 /* max-width 1200px */
 @media (max-width:1199px) and (min-width:768px) {
     /* style header */
+    .container,
+    .container-fluid,
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm {
+    --bs-gutter-x: none;
+    }
     .icon-caret {
         display: none;
     }
@@ -366,7 +375,7 @@
         display: flex;
     }
     .sub-menu {
-        padding: 8px 18px;
+        padding: 8px 24px;
     }
     .sub-menu ul li a{
         text-align: center;
@@ -399,7 +408,7 @@
     }
     .search {
         font-size: 16px;
-        width: 120px;
+        width: 100px;
         border: none;
         outline: none;
         background-color: white;

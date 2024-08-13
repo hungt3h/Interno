@@ -243,6 +243,9 @@ img {
     padding: 83px 48px;
     border-radius: 30px;
 }
+.plan:hover {
+    background-color: #F4F0EC;
+}
 
 .qustion {
    padding-left: 48px; 
@@ -285,7 +288,7 @@ img {
 }
 .testimonial {
     background-color: #F4F0EC;
-    padding: 88px 38px;
+    padding: 88px 0;
 }
 .testimonial-item {
     height: 100%;
@@ -311,7 +314,30 @@ img {
 .infomation:hover .infomation-text {
     display: block;
     width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.slick-feedback {
+    display: flex;
+    align-items: center;
+}
+.slick-feedback .slick-slide {
+    margin-right: 18px;
+}
+
+.slick-feedback .slick-slide:last-of-type {
+    margin-right: 0;
+}
+.slick-slide > div,
+.slick-slide .item {
+    height: 100%;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-accordion-active-color);
+    background-color: #F4F0EC;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
