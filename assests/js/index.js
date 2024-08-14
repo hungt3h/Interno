@@ -58,6 +58,73 @@ $('.slick-feedback').slick({
   ]
 });
 
+$('.slick-blog').slick({
+  infinite: true,
+  slidesToScroll: 1,
+  slidesToShow: 3,
+  prevArrow: 
+  `
+    <div class="prev">
+      <i class="fa-solid fa-chevron-left icon-arrow"></i>
+    </div>
+  `,
+  nextArrow: 
+  `
+    <div class="next">
+      <i class="fa-solid fa-chevron-right icon-arrow"></i>
+    </div>
+  `,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToScroll: 1,
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToScroll: 1,
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+$('.slick-team').slick({
+  infinite: true,
+  slidesToScroll: 1,
+  slidesToShow: 4,
+  prevArrow: 
+  `
+    <div class="prev">
+      <i class="fa-solid fa-chevron-left icon-arrow"></i>
+    </div>
+  `,
+  nextArrow: 
+  `
+    <div class="next">
+      <i class="fa-solid fa-chevron-right icon-arrow"></i>
+    </div>
+  `,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToScroll: 1,
+        slidesToShow: 4
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToScroll: 1,
+        slidesToShow: 2
+      }
+    }
+  ]
+});
+
 $('.slick-img').slick({
   infinite: true,
   slidesToScroll: 1,
@@ -85,10 +152,18 @@ $('.slick-feedback').on('setPosition', function () {
 $('.slick-img').on('setPosition', function () {
   setEqualHeight('.slick-img');
 });
+$('.slick-img').on('setPosition', function () {
+  setEqualHeight('.slick-blog');
+});
+$('.slick-img').on('setPosition', function () {
+  setEqualHeight('.slick-team');
+});
 
 // Gọi lại hàm khi cửa sổ thay đổi kích thước
 $(window).resize(function() {
     setEqualHeight('.slick-feedback');
     setEqualHeight('.slick-img');
+    setEqualHeight('.slick-blog');
+    setEqualHeight('.slick-team');
 });
 
