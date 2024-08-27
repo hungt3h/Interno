@@ -85,6 +85,10 @@
         top: 10px;
         left: 80%;
     }
+    .search-content {
+        width: 100%;
+        margin: 0;
+    }
 
 
 
@@ -267,6 +271,12 @@
     .aboutUs {
         margin-bottom: 24px;
     }
+
+
+    .navbar-brand img {
+        height: 46px;
+        width: 160px;
+     }
 
 
     /* style home */

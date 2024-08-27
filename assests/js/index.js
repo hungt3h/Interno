@@ -1,11 +1,5 @@
-function showSearch() {
-  document.querySelector('#search').classList.toggle('active-search');
-}
 
-function showSearchRps() {
-  document.querySelector('#search-rps').classList.toggle('active-search');
-}
-
+// menu
 function showNav() {
   document.querySelector('.main-menu').classList.toggle('active-search');
 }
@@ -18,10 +12,8 @@ menuItems.forEach(item => {
   const submenu = item.querySelector('.drop-item');
   
   item.addEventListener('click', () => {
-
     submenu.classList.toggle('active-search');
   });
-  
 });
 
 $('.slick-feedback').slick({
@@ -167,3 +159,93 @@ $(window).resize(function() {
     setEqualHeight('.slick-team');
 });
 
+// search
+function showInputSearch() {
+  document.querySelector('#search').classList.toggle('active-search');
+  document.querySelector('#search .search-content').classList.remove('active-search');
+}
+
+function showSearchRps() {
+  document.querySelector('#searchRps').classList.toggle('active-search');
+  document.querySelector('#searchRps .search-content').classList.remove('active-search');
+}
+
+function showContentSearch(event, mobile = false, index = false) {
+  event.preventDefault();
+  const listDataContent = [
+    {
+      img: 'Image-6.png',
+      name: 'Modern Kitchan',
+      category: 'Decor / Artchitecture'
+    },
+    {
+      img: 'Image-6.png',
+      name: 'Modern Kitchan',
+      category: 'Decor / Artchitecture'
+    },
+    {
+      img: 'Image-6.png',
+      name: 'Modern Kitchan',
+      category: 'Decor / Artchitecture'
+    }
+  ];
+  let contentHTML = '';
+
+  if (event.target.value != '') {
+    if (mobile) {
+      document.querySelector('#searchRps .search-content').classList.add('active-search');
+    } else {
+      document.querySelector('#search .search-content').classList.add('active-search');
+    }
+    const dataSearch = listDataContent.filter((item) => item.name.toLocaleLowerCase().includes(event.target.value.toLocaleLowerCase()));
+    if (dataSearch.length > 0) {
+      if (index) {
+        dataSearch.forEach((item) => {
+          contentHTML += `
+            <div class="item-search">
+              <div class="image">
+                  <a href="./pages/project.html"><img src="./assests/img/Project/${item.img}" alt=""></a>
+              </div>
+              <div class="name">
+              <a href="./pages/project.html">
+                  <span class="name-content">${item.name}</span>
+                  <span class="category">${item.category}</span>
+              </a>
+              </div>
+            </div>
+          `
+        });
+      } else {
+        dataSearch.forEach((item) => {
+          contentHTML += `
+            <div class="item-search">
+              <div class="image">
+                  <a href="./pages/project.html"><img src="../assests/img/Project/${item.img}" alt=""></a>
+              </div>
+              <div class="name">
+              <a href="./pages/project.html">
+                  <span class="name-content">${item.name}</span>
+                  <span class="category">${item.category}</span>
+              </a>
+              </div>
+            </div>
+          `
+        });
+      }
+    } else {
+      contentHTML = '<span class="no-data">No Success Data...</span>';
+    }
+  } else {
+    if (mobile) {
+      document.querySelector('#searchRps .search-content').classList.remove('active-search');
+    } else {
+      document.querySelector('#search .search-content').classList.remove('active-search');
+    }
+  }
+
+  if (mobile) {
+    $("#searchRps .search-content").html(contentHTML);
+  } else {
+    $("#search .search-content").html(contentHTML);
+  }
+}
