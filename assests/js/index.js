@@ -16,6 +16,8 @@ menuItems.forEach(item => {
   });
 });
 
+
+// Effect
 $('.slick-feedback').slick({
   infinite: true,
   slidesToScroll: 3,
