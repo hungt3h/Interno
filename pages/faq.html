@@ -20,9 +20,10 @@
                         <a class="navbar-brand" href="../index.html"><img src="../assests/img/Logo.png" alt="Logo"></a>
                     </div>
                     <div class="col-4 icon-bars">
-                        <div class="border-search-rps d-flex align-items-center border" id="search-rps">
-                            <input class="search-rps" type="search">
+                        <div class="border-search-rps d-flex align-items-center border" id="searchRps">
+                            <input class="search-rps" onkeyup="showContentSearch(event, true)" type="search">
                             <i class="fa-solid fa-magnifying-glass" onclick="showSearchRps()"></i>
+                            <div class="search-content"></div>
                         </div>
                         <i class="fa-solid fa-bars icon-navbars border px-2 py-1 rounded-3" onclick="showNav()"></i>
                     </div>
@@ -34,21 +35,10 @@
                                     <a href="#">Pages</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a class="fs-6" href="./about.html">About</a>
+                                            <a class="fs-6" href="../pages/about.html">About</a>
                                         </li>
                                         <li>
-                                            <a class="fs-6 rounded-bottom-4" href="./team.html">Team</a>
-                                        </li>
-                                    </ul>
-                                    <div class="icon-caret">
-                                        <i class="fa-solid fa-caret-down"></i>
-                                    </div>
-                                </li>
-                                <li class="sub-menu">
-                                    <a href="./services.html">Services</a>
-                                    <ul class="drop-item rounded-bottom-4">
-                                        <li>
-                                            <a class="fs-6 rounded-bottom-4" href="./service_single.html">Service Single</a>
+                                            <a class="fs-6 rounded-bottom-4" href="../pages/team.html">Team</a>
                                         </li>
                                     </ul>
                                     <div class="icon-caret">
@@ -56,10 +46,10 @@
                                     </div>
                                 </li>
                                 <li class="sub-menu">
-                                    <a href="./project.html">Project</a>
+                                    <a href="../pages/services.html">Services</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a class="fs-6 rounded-bottom-4" href="./pricing.html">Pricing</a>
+                                            <a class="fs-6 rounded-bottom-4" href="../pages/service_single.html">Service Single</a>
                                         </li>
                                     </ul>
                                     <div class="icon-caret">
@@ -67,16 +57,27 @@
                                     </div>
                                 </li>
                                 <li class="sub-menu">
-                                    <a href="./blog.html">Blog</a>
-                                </li>
-                                <li class="sub-menu">
-                                    <a href="./contact.html">Contact</a>
+                                    <a href="../pages/project.html">Project</a>
                                     <ul class="drop-item rounded-bottom-4">
                                         <li>
-                                            <a class="fs-6" href="./faq.html">Faq's</a>
+                                            <a class="fs-6 rounded-bottom-4" href="../pages/pricing.html">Pricing</a>
+                                        </li>
+                                    </ul>
+                                    <div class="icon-caret">
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </div>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="../pages/blog.html">Blog</a>
+                                </li>
+                                <li class="sub-menu">
+                                    <a href="../pages/contact.html">Contact</a>
+                                    <ul class="drop-item rounded-bottom-4">
+                                        <li>
+                                            <a class="fs-6" href="../pages/faq.html">Faq's</a>
                                         </li>
                                         <li>
-                                            <a class="fs-6 rounded-bottom-4" href="./changelog.html">Changelog</a>
+                                            <a class="fs-6 rounded-bottom-4" href="../pages/changelog.html">Changelog</a>
                                         </li>
                                     </ul>
                                     <div class="icon-caret">
@@ -84,8 +85,9 @@
                                     </div>
                                 </li>
                                 <div class="border-search border" id="search">
-                                    <input class="search" type="search">
-                                    <i class="fa-solid fa-magnifying-glass" onclick="showSearch()"></i>
+                                    <input class="search" onkeyup="showContentSearch(event)" type="search" placeholder="Search">
+                                    <i class="fa-solid fa-magnifying-glass" onclick="showInputSearch()"></i>
+                                    <div class="search-content"></div>
                                 </div>
                             </ul>
                         </div>
@@ -478,6 +480,8 @@
     </div>
 </body>
 
+<script src="../assests/js/jquery-3.7.1.min.js"></script>
+<script src="../assests/slick/slick.js"></script>
 <script src="../assests/js/bootstrap.js"></script>
 <script src="../assests/js/index.js"></script>
 

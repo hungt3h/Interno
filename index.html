@@ -22,9 +22,10 @@
                         <a class="navbar-brand" href="index.html"><img src="./assests/img/Logo.png" alt="Logo"></a>
                     </div>
                     <div class="col-4 icon-bars">
-                        <div class="border-search-rps d-flex align-items-center border" id="search-rps">
-                            <input class="search-rps" type="search">
+                        <div class="border-search-rps d-flex align-items-center border" id="searchRps">
+                            <input class="search-rps" onkeyup="showContentSearch(event, true, true)" type="search">
                             <i class="fa-solid fa-magnifying-glass" onclick="showSearchRps()"></i>
+                            <div class="search-content"></div>
                         </div>
                         <i class="fa-solid fa-bars icon-navbars border px-2 py-1 rounded-3" onclick="showNav()"></i>
                     </div>
@@ -86,8 +87,9 @@
                                     </div>
                                 </li>
                                 <div class="border-search border" id="search">
-                                    <input class="search" type="search" placeholder="Search">
-                                    <i class="fa-solid fa-magnifying-glass" onclick="showSearch()"></i>
+                                    <input class="search" onkeyup="showContentSearch(event, false, true)" type="search" placeholder="Search">
+                                    <i class="fa-solid fa-magnifying-glass" onclick="showInputSearch()"></i>
+                                    <div class="search-content"></div>
                                 </div>
                             </ul>
                         </div>
@@ -108,7 +110,7 @@
                                 <div class="col-12 col-md-6 m-auto">
                                     <h1 class="disply-text">Let Your Home Be Unique</h1>
                                     <p class="text-responsive">There are many variations of the passages of lorem Ipsum fromavailable,variations of the passages.</p>
-                                    <button class="btn btn-guide btn-secondary color-primary-btn2">Get Started<i class="fa-solid fa-arrow-right ms-2"></i></button>
+                                    <a href="./pages/project.html" class="btn btn-guide btn-secondary color-primary-btn2">Get Started<i class="fa-solid fa-arrow-right ms-2"></i></a>
                                 </div>
                                 <div class="col-6"></div>
                             </div>
@@ -124,21 +126,21 @@
                     <p>
                         There are many variations of the passages of lorem Ipsum from available, majority.
                     </p>
-                    <span class="btn fw-bold">Read more<i class="fa-solid fa-arrow-right ms-2"></i></span>
+                    <a href="" class="btn fw-bold hoverRead">Read more<i class="fa-solid fa-arrow-right ms-2"></i></a>
                 </div>
                 <div class="col-12 col-md-4 text-center plan">
                     <h3>Interior Work</h3>
                     <p>
                         There are many variations of the passages of lorem Ipsum from available, majority.
                     </p>
-                    <span class="btn fw-bold">Read more<i class="fa-solid fa-arrow-right ms-2"></i></span>
+                    <a href="" class="btn fw-bold hoverRead">Read more<i class="fa-solid fa-arrow-right ms-2"></i></a>
                 </div>
                 <div class="col-12 col-md-4 text-center plan">
                     <h3>Realization</h3>
                     <p>
                         There are many variations of the passages of lorem Ipsum from available, majority.
                     </p>
-                    <span class="btn fw-bold">Read more<i class="fa-solid fa-arrow-right ms-2"></i></span>
+                    <a href="" class="btn fw-bold hoverRead">Read more<i class="fa-solid fa-arrow-right ms-2"></i></a>
                 </div>
             </div>
         </div>
@@ -199,7 +201,7 @@
                                     <div class="col-4 col-md-8 col-lg-4">
                                         <img src="./assests/img/people2.png" alt="">
                                     </div>
-                                    <div class="col-4 col-md-12 col-lg-4 d-flex align-items-center">
+                                    <div class="col-8 col-md-12 col-lg-8 d-flex align-items-center">
                                         <div class="ms-1">
                                             <h3>Raymond Galario</h3>
                                             <p class="small-paragraph">Sydney, Australia</p>
@@ -215,7 +217,7 @@
                                     <div class="col-4 col-md-8 col-lg-4">
                                         <img src="./assests/img/people3.png" alt="">
                                     </div>
-                                    <div class="col-4 col-md-12 col-lg-4 d-flex align-items-center">
+                                    <div class="col-8 col-md-12 col-lg-8 d-flex align-items-center">
                                         <div class="ms-1">
                                             <h3>Benny Roll</h3>
                                             <p class="small-paragraph">Sydney, New York</p>
@@ -229,11 +231,11 @@
                             <div class="testimonial-item bg-white rounded-5">
                                 <div class="row aboutUs">
                                     <div class="col-4 col-md-8 col-lg-4">
-                                        <img src="./assests/img/people1.png" alt="">
+                                        <img src="./assests/img/people4.png" alt="">
                                     </div>
                                     <div class="col-8 col-md-12 col-lg-8 d-flex align-items-center">
                                         <div class="ms-1">
-                                            <h3>Nattasha Mith</h3>
+                                            <h3>Nattasha Julie</h3>
                                             <p class="small-paragraph">Sydney, USA</p>
                                         </div>
                                     </div>
@@ -245,11 +247,11 @@
                             <div class="testimonial-item bg-white rounded-5">
                                 <div class="row aboutUs">
                                     <div class="col-4 col-md-8 col-lg-4">
-                                        <img src="./assests/img/people2.png" alt="">
+                                        <img src="./assests/img/people5.png" alt="">
                                     </div>
-                                    <div class="col-4 col-md-12 col-lg-4 d-flex align-items-center">
+                                    <div class="col-8 col-md-12 col-lg-8 d-flex align-items-center">
                                         <div class="ms-1">
-                                            <h3>Raymond Galario</h3>
+                                            <h3>John Smith</h3>
                                             <p class="small-paragraph">Sydney, Australia</p>
                                         </div>
                                     </div>
@@ -261,11 +263,11 @@
                             <div class="testimonial-item bg-white rounded-5">
                                 <div class="row aboutUs">
                                     <div class="col-4 col-md-8 col-lg-4">
-                                        <img src="./assests/img/people3.png" alt="">
+                                        <img src="./assests/img/people6.png" alt="">
                                     </div>
-                                    <div class="col-4 col-md-12 col-lg-4 d-flex align-items-center">
+                                    <div class="col-8 col-md-12 col-lg-8 d-flex align-items-center">
                                         <div class="ms-1">
-                                            <h3>Benny Roll</h3>
+                                            <h3>Sofia Carter</h3>
                                             <p class="small-paragraph">Sydney, New York</p>
                                         </div>
                                     </div>
